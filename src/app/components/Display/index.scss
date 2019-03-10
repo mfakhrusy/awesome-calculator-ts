@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono');
+@import '~assets/styles/variables/_global.scss';
+
+$height-upper: 55%;
+$height-lower: 100% - $height-upper;
+
+.calculator-display {
+  background-color: transparent;
+  font-family: 'Nova Mono', monospace;
+
+  &.display-basic {
+    height: $height-display-basic;
+  }
+
+  > div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1.5rem;
+  }
+
+  .upper {
+    height: $height-upper;
+    font-size: 4.5rem;
+  }
+
+  .lower {
+    height: $height-lower;
+    font-size: 5rem;
+  }
+}

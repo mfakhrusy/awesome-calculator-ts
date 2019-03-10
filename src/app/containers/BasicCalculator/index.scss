@@ -1,0 +1,9 @@
+@import '~assets/styles/variables/_global.scss';
+
+.calculator {
+  height: 70rem;
+  width: 50rem;
+  background-color: #111111;
+  color: white;
+  z-index: $z-index-calculator;
+}

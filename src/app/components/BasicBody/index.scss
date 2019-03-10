@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono');
+@import '~assets/styles/variables/_global.scss';
+
+.basic-body {
+  display: grid;
+  height: $height-display-body;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "back plus-minus division multiply"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero zero . equal";
+
+  .grid-item {
+    justify-self: center;
+    align-self: center;
+    img {
+      height: 4rem;
+      width: 4rem;
+    }
+
+    &.number {
+      font-size: 3rem;
+      font-family: 'Nova Mono', monospace;
+    }
+  }
+
+  .button-back {
+    grid-area: back;
+  }
+
+  .button-plus-minus {
+    grid-area: plus-minus;
+  }
+
+  .button-division {
+    grid-area: division;
+  }
+
+  .button-multiply {
+    grid-area: multiply;
+  }
+
+  .button-minus {
+    grid-area: minus;
+  }
+
+  .button-plus {
+    grid-area: plus;
+  }
+
+  .button-equal {
+    grid-area: equal;
+  }
+
+  .button-0 {
+    grid-area: zero;
+  }
+
+  .button-1 {
+    grid-area: one;
+  }
+
+  .button-2 {
+    grid-area: two;
+  }
+
+  .button-3 {
+    grid-area: three;
+  }
+
+  .button-4 {
+    grid-area: four;
+  }
+
+  .button-5 {
+    grid-area: five;
+  }
+
+  .button-6 {
+    grid-area: six;
+  }
+
+  .button-7 {
+    grid-area: seven;
+  }
+
+  .button-8 {
+    grid-area: eight
+  }
+
+  .button-9 {
+    grid-area: nine;
+  }
+}
