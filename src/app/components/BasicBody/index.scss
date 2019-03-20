@@ -14,16 +14,31 @@
     "zero zero . equal";
 
   .grid-item {
-    justify-self: center;
-    align-self: center;
+    justify-self: stretch;
+    align-self: stretch;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
     img {
       height: 4rem;
       width: 4rem;
     }
 
     &.number {
-      font-size: 3rem;
+      font-size: 4rem;
       font-family: 'Nova Mono', monospace;
+    }
+
+    & > .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    &:hover {
+      transition: 0.2s;
+      background-color: rgba(0, 0, 0, 0.5);
     }
   }
 

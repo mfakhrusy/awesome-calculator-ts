@@ -7,6 +7,8 @@ $height-lower: 100% - $height-upper;
 .calculator-display {
   background-color: transparent;
   font-family: 'Nova Mono', monospace;
+  border-bottom: 0.1rem solid #111111;
+  cursor: default;
 
   &.display-basic {
     height: $height-display-basic;
@@ -19,12 +21,12 @@ $height-lower: 100% - $height-upper;
     padding: 0 1.5rem;
   }
 
-  .upper {
+  .display-upper {
     height: $height-upper;
     font-size: 4.5rem;
   }
 
-  .lower {
+  .display-lower {
     height: $height-lower;
     font-size: 5rem;
   }

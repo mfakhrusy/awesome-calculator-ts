@@ -1,10 +1,10 @@
-import { TodoModel } from 'app/models';
-
 export interface RootState {
-  todos: RootState.TodoState;
+  calculations: RootState.CalculationsState,
+  result: RootState.ResultState,
   router?: any;
 }
 
 export namespace RootState {
-  export type TodoState = TodoModel[];
+  export type CalculationsState = string[];
+  export type ResultState = number;
 }

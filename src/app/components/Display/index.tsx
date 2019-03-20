@@ -1,4 +1,7 @@
 import * as React from 'react';
+// import { connect } from 'react-redux';
+import { Upper } from './Upper';
+import { ConnectedLower } from './Lower';
 
 import './index.scss';
 
@@ -10,16 +13,8 @@ export class Display extends React.Component<DisplayProps, {}> {
 
     return (
       <div className={`calculator-display display-${type}`}>
-        <div className="upper">
-          <span>
-            5+2-3x4
-          </span>
-        </div>
-        <div className="lower">
-          <span>
-            16
-          </span>
-        </div>
+        <Upper />
+        <ConnectedLower result={0} />
       </div>
     )
   }
